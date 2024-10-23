@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Landing Page</title>
+    <style>
+        
+*{
+    scrollbar-width: none;
+    /* margin: 0;
+    padding: 0; */
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+.nav1{
+    width: 100%;
+    height: 55px;
+    background: linear-gradient(45deg,orange,rgb(226, 49, 164));
+}
+.nav1  ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-left: 80px; 
+    font-family: Arial, Helvetica, sans-serif;
+   cursor: pointer;
+}
+.nav1 ul svg{
+    padding-bottom: 40px;
+    border-right: 1px solid #4b4343;
+    padding-right: 7px;
+    padding-left: 0%;
+    width: 20px;
+    margin: 0;
+    height: 55px;
+    cursor: pointer;
+}
+
+.nav1  ul li{
+    list-style: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    padding-bottom: 50px;
+    margin-left: 80px;
+}
+.nav1 ul li{
+   border-right: 1px solid black;
+}
+.nav1 ul button{
+    border-radius: 29px;
+    border: 2px solid wheat;
+    background: transparent;
+    height: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    
+}
+.nav2{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+ .left2{
+    justify-content: start;
+    align-items: start;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    gap: 100px;
+    background-color:ghostwhite;
+}
+.left2 h1{
+    text-align: center;
+    font-size: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    width: 190px;
+    /* border: 2px solid black; */
+    padding-left: 100px;
+}
+.nav2 .left2 ul{
+    display: flex;
+    gap: 30px 30px;
+    list-style: none;
+    gap: 40px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    height: 60px;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+.nav2 .left2 ul li:nth-last-child(1){
+    background-color: black;
+    height:60px ;
+    width: 50px;
+    color: white;
+    text-align: center;
+    padding-bottom: 0px;
+  
+
+}
+.nav2 .right2 ul li{
+    justify-content: end;
+    align-items: end;
+}
+.search{
+    padding-right: 150px;
+    background-color:ghostwhite;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+   
+}
+.photo{
+    background-image:    
+    /* linear-gradient(180deg,
+                        rgba(167, 8, 8, 0.3) 0% 
+                        rgba(207, 21, 21, 0.8) 100%), */
+                        url("wor.jpg");
+    fill-opacity: -10px;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* filter: drop-shadow(70px 70px 10px rgb(237, 227, 227)); */
+    /* filter: hue-rotate(90deg); */
+    /* filter: grayscale(100%); */
+    /* filter: opacity(50%); */
+
+    
+}
+/* .photo::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 10px solid black;
+    position: absolute;
+    bottom: -30px;
+    right: -30px;
+    z-index: -1;
+} */
+ .photo .text {
+    position: absolute;
+    height: 50%;
+    color: #fff;
+    font-size: 30px;
+    border-left: 2px solid orangered;
+    margin-left: 200px;
+    margin-top: 110px;
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-left: 20px;
+   
+      
+}
+.photo .text h1,h4,h6{
+    margin: 20px;
+    padding: 0;
+}
+.photo .text button.first{
+    width: 170px;
+    height: 40px;
+    background: transparent;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    background: linear-gradient(45deg,orange,rgb(226, 49, 164));
+    border-radius: 60px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.photo .text button{
+    width: 220px;
+    height: 40px;
+    background: transparent;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    border-radius: 60px;
+    border: 2px solid rgb(61, 60, 60);
+cursor: pointer;
+}
+.middle{
+    display: flex;
+    width: 98%;
+    height:20vh;
+    background: linear-gradient(45deg,orange,rgb(226, 49, 164)) ;
+    padding: 13px;
+    font-size: 13px;
+    text-align: center;
+}
+.middle .one{
+    width: 200px;
+    /* margin-left: auto; */
+    color: white;
+    margin-right: auto;
+}
+.middle .two{
+    width: 250px;
+    margin-left:5px ;
+    color: white;
+    margin-right: auto;
+}
+.svg{
+    margin-left: 140px;
+    display: flex;
+    margin-top: 13px;
+}
+.middle .three{
+    width: 200px;
+    margin-right: auto;
+    color: white;
+    
+}
+.bottom{
+    display: flex;
+
+
+}
+.bottom .all{
+    max-width: 60%;
+}
+.bottom  .all h2{
+    margin-left: 150px;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+    font-size: 30px;
+    font-weight:500;
+}
+.bottom .all h3{
+    margin-left: 150px;
+        font-family: "Fjalla One", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+    font-size: 20px;
+    font-weight:500;
+    font: bold;
+}
+.bottom .all p{
+    margin-left: 150px;
+        font-family: "Fjalla One", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    font-size: 20px;
+}
+.man{
+   display: flex;
+    width: 220px;
+    height: 37px;
+    margin-top: 20%;
+    margin-left: 10%;
+    float: right;
+    border: 10px solid white;
+    background-color: white;
+    position: relative;
+}
+.man::after{
+    content: "";
+    display: block;
+    width:290px;
+    height: 90px;
+    background:linear-gradient(45deg,orange,rgb(226, 49, 164)) ;
+    position: absolute;
+    bottom: -30px;
+    right: -30px;
+    z-index: -1;
+    justify-content:center;
+    align-items: center;
+}
+ img{
+    width: 170px;
+    height: 260px;
+    float:right;
+    margin-left: 30px;
+    margin-top: -97%;
+}
+.btn{
+    margin-top: 0;
+    padding: 0;
+}
+.btn button{
+    background:linear-gradient(45deg,orange,rgb(226, 49, 164)) ;
+    color: white;
+    width: 220px;
+    height: 40px;
+    border-radius: 42px ;
+    border: 2px solid white;
+    margin-left: 150px;
+   
+}
+.footer{
+ font-size: 15px;
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font: bold;
+    /* margin-left: 150px; */
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="nav1">
+        <!-- <div class="left1">
+            <img src="" alt="">
+        </div> -->
+            <ul>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                    <path d="M2 18.5C3.76504 19.521 5.81428 20 8 20C14.4808 20 19.7617 14.8625 19.9922 8.43797L22 4.5L18.6458 5C17.9407 4.37764 17.0144 4 16 4C13.4276 4 11.5007 6.51734 12.1209 8.98003C8.56784 9.20927 5.34867 7.0213 3.48693 4.10523C2.25147 8.30185 3.39629 13.3561 6.5 16.4705C6.5 17.647 3.5 18.3488 2 18.5Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                    <path d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                    <path d="M16.5 12C16.5 14.4853 14.4853 16.5 12 16.5C9.51472 16.5 7.5 14.4853 7.5 12C7.5 9.51472 9.51472 7.5 12 7.5C14.4853 7.5 16.5 9.51472 16.5 12Z" stroke="currentColor" stroke-width="1.5" />
+                    <path d="M17.5078 6.5L17.4988 6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                    <path d="M12 20.5C13.8097 20.5 15.5451 20.3212 17.1534 19.9934C19.1623 19.5839 20.1668 19.3791 21.0834 18.2006C22 17.0221 22 15.6693 22 12.9635V11.0365C22 8.33073 22 6.97787 21.0834 5.79937C20.1668 4.62088 19.1623 4.41613 17.1534 4.00662C15.5451 3.67877 13.8097 3.5 12 3.5C10.1903 3.5 8.45489 3.67877 6.84656 4.00662C4.83766 4.41613 3.83321 4.62088 2.9166 5.79937C2 6.97787 2 8.33073 2 11.0365V12.9635C2 15.6693 2 17.0221 2.9166 18.2006C3.83321 19.3791 4.83766 19.5839 6.84656 19.9934C8.45489 20.3212 10.1903 20.5 12 20.5Z" stroke="currentColor" stroke-width="1.5" />
+                    <path d="M15.9621 12.3129C15.8137 12.9187 15.0241 13.3538 13.4449 14.2241C11.7272 15.1705 10.8684 15.6438 10.1728 15.4615C9.9372 15.3997 9.7202 15.2911 9.53799 15.1438C9 14.7089 9 13.8059 9 12C9 10.1941 9 9.29112 9.53799 8.85618C9.7202 8.70886 9.9372 8.60029 10.1728 8.53854C10.8684 8.35621 11.7272 8.82945 13.4449 9.77593C15.0241 10.6462 15.8137 11.0813 15.9621 11.6871C16.0126 11.8933 16.0126 12.1067 15.9621 12.3129Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                    <path d="M4.5 9.5H4C3.05719 9.5 2.58579 9.5 2.29289 9.79289C2 10.0858 2 10.5572 2 11.5V20C2 20.9428 2 21.4142 2.29289 21.7071C2.58579 22 3.05719 22 4 22H4.5C5.44281 22 5.91421 22 6.20711 21.7071C6.5 21.4142 6.5 20.9428 6.5 20V11.5C6.5 10.5572 6.5 10.0858 6.20711 9.79289C5.91421 9.5 5.44281 9.5 4.5 9.5Z" stroke="currentColor" stroke-width="1.5" />
+                    <path d="M6.5 4.25C6.5 5.49264 5.49264 6.5 4.25 6.5C3.00736 6.5 2 5.49264 2 4.25C2 3.00736 3.00736 2 4.25 2C5.49264 2 6.5 3.00736 6.5 4.25Z" stroke="currentColor" stroke-width="1.5" />
+                    <path d="M12.326 9.5H11.5C10.5572 9.5 10.0858 9.5 9.79289 9.79289C9.5 10.0858 9.5 10.5572 9.5 11.5V20C9.5 20.9428 9.5 21.4142 9.79289 21.7071C10.0858 22 10.5572 22 11.5 22H12C12.9428 22 13.4142 22 13.7071 21.7071C14 21.4142 14 20.9428 14 20L14.0001 16.5001C14.0001 14.8433 14.5281 13.5001 16.0879 13.5001C16.8677 13.5001 17.5 14.1717 17.5 15.0001V19.5001C17.5 20.4429 17.5 20.9143 17.7929 21.2072C18.0857 21.5001 18.5572 21.5001 19.5 21.5001H19.9987C20.9413 21.5001 21.4126 21.5001 21.7055 21.2073C21.9984 20.9145 21.9985 20.4432 21.9987 19.5006L22.0001 14.0002C22.0001 11.515 19.6364 9.50024 17.2968 9.50024C15.9649 9.50024 14.7767 10.1531 14.0001 11.174C14 10.5439 14 10.2289 13.8632 9.995C13.7765 9.84686 13.6531 9.72353 13.505 9.63687C13.2711 9.5 12.9561 9.5 12.326 9.5Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                    <path d="M2 6L8.91302 9.91697C11.4616 11.361 12.5384 11.361 15.087 9.91697L22 6" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                    <path d="M2.01577 13.4756C2.08114 16.5412 2.11383 18.0739 3.24496 19.2094C4.37608 20.3448 5.95033 20.3843 9.09883 20.4634C11.0393 20.5122 12.9607 20.5122 14.9012 20.4634C18.0497 20.3843 19.6239 20.3448 20.7551 19.2094C21.8862 18.0739 21.9189 16.5412 21.9842 13.4756C22.0053 12.4899 22.0053 11.5101 21.9842 10.5244C21.9189 7.45886 21.8862 5.92609 20.7551 4.79066C19.6239 3.65523 18.0497 3.61568 14.9012 3.53657C12.9607 3.48781 11.0393 3.48781 9.09882 3.53656C5.95033 3.61566 4.37608 3.65521 3.24495 4.79065C2.11382 5.92608 2.08114 7.45885 2.01576 10.5244C1.99474 11.5101 1.99475 12.4899 2.01577 13.4756Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                </svg>
+                
+                <li><pre>+91  1234567890       </pre></li>
+                <li><pre>enteryouremail@gmail.com</pre> </li>
+                <button> <pre> <b>REGISTER | SIGN IN</b> </pre></button>
+            </ul>
+
+    </div>
+    <div class="nav2">
+        <div class="left2">
+            <h1><b>LANDING PAGE</b></h1>
+            <ul>
+                <li>Home</li>
+                <li>Blog</li>
+                <li>Page</li>
+                <li>Services</li>
+                <li>Contact</li>
+                <li>Buy Now</li>
+            </ul>
+        </div>
+        <div class="search">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                <path d="M17.5 17.5L22 22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20C15.9706 20 20 15.9706 20 11Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+            </svg>
+        </div>
+    </div>
+    <div class="photo">
+        <div class="text">
+               <h4>WE ARE CREATIVE</h4> 
+               <h1> CREATIVE DIGITAL AGENCY</h1>
+               <h6>Lorem ipsum has been the industrys standard dummy text ever since the 1500 when an unknown printer a look a gallery of type and scrembled it to</h6>
+                <button class="first">READ MORE</button>
+                <button>REQUEST A CONSULT</button>
+            </div>
+    </div>
+    <div class="middle">
+        <div class="svg">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                <path d="M11.8013 6.48949L13.2869 5.00392C14.9596 3.3312 17.1495 2.63737 19.4671 2.52399C20.3686 2.47989 20.8193 2.45784 21.1807 2.81928C21.5422 3.18071 21.5201 3.63143 21.476 4.53289C21.3626 6.8505 20.6688 9.04042 18.9961 10.7131L17.5105 12.1987C16.2871 13.4221 15.9393 13.77 16.1961 15.097C16.4496 16.1107 16.6949 17.0923 15.9578 17.8294C15.0637 18.7235 14.2481 18.7235 13.354 17.8294L6.17058 10.646C5.27649 9.75188 5.27646 8.9363 6.17058 8.04219C6.90767 7.30509 7.88929 7.55044 8.90297 7.80389C10.23 8.06073 10.5779 7.71289 11.8013 6.48949Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                <path d="M16.9959 7H17.0049" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M2.5 21.5L7.5 16.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                <path d="M8.5 21.5L10.5 19.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                <path d="M2.5 15.5L4.5 13.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+            </svg>
+        </div>
+        <div class="one">
+            <h2>LANCH BUSSINESS</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, modi.</p>
+        </div>
+        <div class="svg">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                <path d="M17 13.8045C17 13.4588 17 13.286 17.052 13.132C17.2032 12.6844 17.6018 12.5108 18.0011 12.3289C18.45 12.1244 18.6744 12.0222 18.8968 12.0042C19.1493 11.9838 19.4022 12.0382 19.618 12.1593C19.9041 12.3198 20.1036 12.6249 20.3079 12.873C21.2512 14.0188 21.7229 14.5918 21.8955 15.2236C22.0348 15.7334 22.0348 16.2666 21.8955 16.7764C21.6438 17.6979 20.8485 18.4704 20.2598 19.1854C19.9587 19.5511 19.8081 19.734 19.618 19.8407C19.4022 19.9618 19.1493 20.0162 18.8968 19.9958C18.6744 19.9778 18.45 19.8756 18.0011 19.6711C17.6018 19.4892 17.2032 19.3156 17.052 18.868C17 18.714 17 18.5412 17 18.1955V13.8045Z" stroke="currentColor" stroke-width="1.5" />
+                <path d="M9.5 21C10.8807 22.3333 13.1193 22.3333 14.5 21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M7 13.8045C7 13.3693 6.98778 12.9782 6.63591 12.6722C6.50793 12.5609 6.33825 12.4836 5.99891 12.329C5.55001 12.1246 5.32556 12.0224 5.10316 12.0044C4.43591 11.9504 4.07692 12.4058 3.69213 12.8731C2.74875 14.0189 2.27706 14.5918 2.10446 15.2236C1.96518 15.7334 1.96518 16.2666 2.10446 16.7764C2.3562 17.6979 3.15152 18.4702 3.74021 19.1852C4.11129 19.6359 4.46577 20.0472 5.10316 19.9956C5.32556 19.9776 5.55001 19.8754 5.99891 19.6709C6.33825 19.5164 6.50793 19.4391 6.63591 19.3278C6.98778 19.0218 7 18.6307 7 18.1954V13.8045Z" stroke="currentColor" stroke-width="1.5" />
+                <path d="M2 16V12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12L22.0001 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </div>
+        <div class="two">
+            <h2>ONLINE SUPPORT TEAM</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos iure repudiandae deserunt.</p>
+        </div>
+       <div class="svg">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                <path d="M5.04798 8.60657L2.53784 8.45376C4.33712 3.70477 9.503 0.999914 14.5396 2.34474C19.904 3.77711 23.0904 9.26107 21.6565 14.5935C20.2227 19.926 14.7116 23.0876 9.3472 21.6553C5.36419 20.5917 2.58192 17.2946 2 13.4844" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M12 8V12L14 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </div>
+            <div class="three">
+            <h2>TIME MANGEMENT</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta aliquid eius eum expedita vero?</p>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="all">
+
+            <h2><b>ABOUT US</b></h2>
+            <h3><b>15 years,we are passionate about achieving better results for our client</b>s</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, similique mollitia. Asperiores sed obcaecati deleniti doloremque enim illum error, repellat sequi aliquam architecto ullam! Labore ipsum, eaque, eligendi cumque aliquam ea earum, nisi magnam voluptatibus iste soluta nulla sapiente tempore facere alias. Nesciunt, repudiandae omnis.</p>
+        </div>
+        <div class="man">
+            <img src="man1.jpg" alt="">
+                
+        </div>
+    </div>
+        <div class="btn">
+
+            <button>
+                READ MORE
+            </button>
+    </div>
+    
+    <div class="footer">
+       <b>&copy; DivyaSriBojja-2024</b> 
+    </div>
+</body>
+</html>
