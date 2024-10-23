@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Portfolio</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            
+        }
+        .container{
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+            height: 100%;
+            width: 100%;
+            background:linear-gradient(270deg,rgb(245, 186, 75),rgb(191, 237, 248));
+        }
+        .nav{
+            background: linear-gradient(360deg,rgb(214, 214, 244),purple);
+            height: 15vh;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            padding-top: 10px;
+        }
+        .nav .name h1,.stu h3{
+            font-weight: 700;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            /* font-size: 20px; */
+
+        }
+        .photo img{
+            margin: 20px;
+            width: 18vw;
+            height: 50vh;
+            border-radius:180px;
+            border: 5px solid rgb(166, 193, 243);
+            margin-left: 30%;
+        }
+        .about{
+            margin-left: 25px;
+        }
+        .about p{
+            font-size: 20px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .about p::first-letter{
+            font-size: 30px;
+        }
+        .skills{
+            margin: 25px;
+        }
+        .skills .grid{
+            display: grid;
+            row-gap: 5px;
+        }
+        .skills .grid .grid1,.grid2,.grid3,.grid4,.grid5{
+            display: grid;
+            grid-template-rows:auto;
+            height: 5vh;
+            width:100%;
+            background-color: beige;
+            border: 2px solid rgb(225, 215, 215);
+            padding-top: 7px;
+            padding-left: 5px;
+            font-size: 20px;
+            font-family:'Times New Roman', Times, serif;
+        }
+        .projects{
+            margin-left: 25px;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .projects img{
+            width: 30vw;
+            height: 40vh;
+            margin-left: 30%;
+            margin-top: 25px;
+        }
+        .projects h2{
+            font-size: 25px;
+            font-weight: 700;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: crimson;
+        }
+        .projects p{
+            font-size: 20px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            
+        }
+        .projects p::first-letter{
+            font-size: 30px;
+        }
+        .resume{
+            margin-left: 25px;
+            justify-content: center;
+            align-items: center;
+            margin-top: 25px;
+            row-gap: 30px;
+        }
+        .resume a{
+            font-size: 25px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .contact{
+            margin-left: 25px;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+            margin-top: 50px;
+        }
+        .contact h2{
+            font-size: 20px;
+            margin-top: 12px ;
+
+        }
+        .footer{
+            background: linear-gradient(180deg,rgb(199, 196, 196),rgb(65, 65, 65));
+            height: 10vh;
+            width: 100%;
+            position:sticky;
+            bottom:0px ;
+        }
+        .footer .copy ,.back{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            font-size: 20px;
+            font-weight:600;
+          
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="name">
+                <h1>DIVYA SRI BOJJA</h1>
+            </div>
+            <div class="stu">
+                <h3>Student</h3>
+            </div>
+        </div>
+        <div class="photo">
+            <img src="climbing.jpeg" alt="">
+        </div>
+        <div class="about">
+            <h1>ABOUT ME</h1>
+            <p>-As a highly motivated and detail-oriented Computer Science Engineer, I bring a comprehensive skill set in programming languages (C, Python, Java), web development (HTML, CSS, JavaScript), and problem-solving expertise. 
+            </p>
+            <p>
+                -With a strong foundation in data structures and algorithms, I excel in critical thinking and analytical problem-solving. Proficient in collaborating on projects and communicating effectively, I possess excellent teamwork and interpersonal skills. 
+            </p>
+            <p>
+                -Passionate about staying updated with industry trends, I continuously explore emerging technologies to enhance my expertise. Seeking a challenging role that leverages my technical skills and enthusiasm for innovation to drive business growth and success.</p>
+            </p>
+            </div>
+            <div class="skills">
+                <h1>SKILLS</h1>
+                <div class="grid">
+                    <div class="grid1">C</div>
+                    <div class="grid2">Python</div>
+                    <div class="grid3">Java</div>
+                    <div class="grid4">Team Work</div>
+                    <div class="grid5">Creativity</div>
+                </div>
+            </div>
+            <div class="projects">
+                <h1>PROJECTS</h1>
+                <img src="cnn.jpg" alt="">
+                <h2>SIGN LANGUAGE RECOGNITION USING CNN</h2>
+                <p>-Sign language recognition is a crucial aspect of human-computer interaction for individuals who are deaf or hard of hearing. Convolutional Neural Networks (CNNs) have emerged as a promising approach for accurate sign language recognition. In this context, a CNN-based system can be designed to recognize sign language from visual data, such as images or videos, by extracting features from the input data.
+                </p>
+                <p>-The core idea is to feed the extracted features into a classification layer, which maps the input to a sign language vocabulary. The effectiveness of CNN-based sign language recognition systems relies on the quality of the training data, the choice of architecture, and the robustness to variations in lighting, pose, and background.  
+                </p>
+                <h2>MESSAGE ENCODING AND DECODING IN SECURITY ASPECTS</h2>
+                <img src="ende.jpg" alt="">
+                <p>
+                    -In the context of security, encoding and decoding refer to techniques used to protect sensitive information from unauthorized access. Encoding involves converting plaintext data into a non-readable format, making it difficult for hackers to intercept or read. Common encoding methods include symmetric and asymmetric encryption, hashing, and encoding schemes like Base64.
+                    </p>
+                    <p>
+                    -Decoding is the reverse process, converting the encoded data back to its original form. Effective encoding and decoding processes are crucial in cybersecurity to prevent data breaches, protect sensitive information, and ensure the integrity of digital communications.
+                </p>
+            </div>
+            <div class="resume">
+                <h1>RESUME</h1>
+                <a href="">Download My Resume (PDF)</a>
+            </div>
+            <div class="contact">
+                <h1>CONTACT</h1>
+                <h2>E-mail: <a href="BDS-RESUME.pdf">divyasribojja2005@gmail.com</a></h2>
+                <h2>Phone: 1234567891</h2>
+            </div>
+            <div class="footer">
+                <div class="copy">
+                    &copy; 2024 &copy; Divya Sri.All rights reserved
+                </div>
+                <div class="back"> 
+                    Back to top
+                </div>
+            </div>
+    </div>
+</body>
+</html>
